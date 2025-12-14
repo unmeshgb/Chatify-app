@@ -19,7 +19,8 @@ const io = socketIo(server, {
       : ["http://localhost:3000"],
     methods: ["GET", "POST"],
     credentials: true
-  }
+  },
+  transports: ['polling']
 });
 
 // Connect to MongoDB
